@@ -34,3 +34,23 @@ def fetch_api_prod_rep_data():
 		result.raise_for_status()
 	
 	return result.json()
+
+
+def save_rep():
+	""" Saves the rep data. """
+	return ''
+
+
+def save_rep_skill():
+	""" Saves the rep skill. """
+	return ''
+
+
+def save_rep_role():
+	""" Saves the rep role. """
+	return ''
+
+
+def save_rep_workgroup():
+	""" Saves the rep workgroup. """
+	return ''

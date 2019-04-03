@@ -16,7 +16,8 @@ config = {
 	'DB_PASSWORD': os.getenv('DB_PASSWORD'),
 	'DB_DRIVER': os.getenv('DB_DRIVER'),
 	'DB_TRUSTED_CONNECTION': os.getenv('DB_TRUSTED_CONNECTION') == 1,
-	'ROOT_DIR': ROOT_DIR
+	'ROOT_DIR': ROOT_DIR,
+	'IS_PRODUCTION': os.getenv('PRODUCTION') == 1,
 }
 
 

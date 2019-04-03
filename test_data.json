@@ -1,0 +1,4982 @@
+{
+  "$id": "1",
+  "dataList": [
+    {
+      "$id": "2",
+      "userId": "Avtex_Test",
+      "homeSite": "1",
+      "firstName": "test",
+      "lastName": "avtex",
+      "displayName": "test",
+      "ntDomainUser": null,
+      "extension": "8803",
+      "outboundANI": "8136058803",
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "3",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "4",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "5",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "6",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "7",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "8",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "9",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "10",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "11",
+      "userId": "balonso",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "balonso",
+      "ntDomainUser": "ultimatemedical\\balonso",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "12",
+          "name": "MCS_CompanyOperator",
+          "customAttributes": null,
+          "id": "MCS_CompanyOperator",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "13",
+          "name": "MCS_Inbound Admissions Military",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "14",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "15",
+          "name": "MCS_Online Admissions Cancels",
+          "customAttributes": null,
+          "id": "MCS_Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "16",
+          "name": "MCS_ReEnroll Team",
+          "customAttributes": null,
+          "id": "MCS_ReEnroll Team",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "17",
+          "name": "MCS_Team OLA I",
+          "customAttributes": null,
+          "id": "MCS_Team OLA I",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "18",
+          "name": "MCS_Team OLA II",
+          "customAttributes": null,
+          "id": "MCS_Team OLA II",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "19",
+          "name": "MCS_Team OLA III",
+          "customAttributes": null,
+          "id": "MCS_Team OLA III",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "20",
+          "name": "MCS_Team OLA IV",
+          "customAttributes": null,
+          "id": "MCS_Team OLA IV",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "21",
+          "name": "MCS_Team OLA IX",
+          "customAttributes": null,
+          "id": "MCS_Team OLA IX",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "22",
+          "name": "MCS_Team OLA V",
+          "customAttributes": null,
+          "id": "MCS_Team OLA V",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "23",
+          "name": "MCS_Team OLA VI",
+          "customAttributes": null,
+          "id": "MCS_Team OLA VI",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "24",
+          "name": "MCS_Team OLA VII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA VII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "25",
+          "name": "MCS_Team OLA X",
+          "customAttributes": null,
+          "id": "MCS_Team OLA X",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "26",
+          "name": "MCS_Team OLA XI",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XI",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "27",
+          "name": "MCS_Team OLA XII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "28",
+          "name": "MCS_Team OLA XIII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XIII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "29",
+          "name": "MCS_Team OLA XIV",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XIV",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "30",
+          "name": "MCS_Team OLA XV",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XV",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "31",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "32",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "33",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 50,
+          "desireToUse": 0,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "34",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 100,
+          "desireToUse": 0,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "35",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 0,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "36",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "37",
+      "userId": "bramalho",
+      "homeSite": "1",
+      "firstName": "Bill",
+      "lastName": "Ramalho",
+      "displayName": "Bill Ramalho",
+      "ntDomainUser": "ultimatemedical\\wramalho",
+      "extension": "2884",
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "38",
+          "name": "MCS_CompanyOperator",
+          "customAttributes": null,
+          "id": "MCS_CompanyOperator",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "39",
+          "name": "MCS_Inbound Admissions Military",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "40",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "41",
+          "name": "MCS_Online Admissions Cancels",
+          "customAttributes": null,
+          "id": "MCS_Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "42",
+          "name": "MCS_Online Student Management",
+          "customAttributes": null,
+          "id": "MCS_Online Student Management",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "43",
+          "name": "MCS_ReEnroll Team",
+          "customAttributes": null,
+          "id": "MCS_ReEnroll Team",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "44",
+          "name": "MCS_Team OLA I",
+          "customAttributes": null,
+          "id": "MCS_Team OLA I",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "45",
+          "name": "MCS_Team OLA II",
+          "customAttributes": null,
+          "id": "MCS_Team OLA II",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "46",
+          "name": "MCS_Team OLA III",
+          "customAttributes": null,
+          "id": "MCS_Team OLA III",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "47",
+          "name": "MCS_Team OLA IV",
+          "customAttributes": null,
+          "id": "MCS_Team OLA IV",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "48",
+          "name": "MCS_Team OLA IX",
+          "customAttributes": null,
+          "id": "MCS_Team OLA IX",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "49",
+          "name": "MCS_Team OLA V",
+          "customAttributes": null,
+          "id": "MCS_Team OLA V",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "50",
+          "name": "MCS_Team OLA VI",
+          "customAttributes": null,
+          "id": "MCS_Team OLA VI",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "51",
+          "name": "MCS_Team OLA VII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA VII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "52",
+          "name": "MCS_Team OLA X",
+          "customAttributes": null,
+          "id": "MCS_Team OLA X",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "53",
+          "name": "MCS_Team OLA XI",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XI",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "54",
+          "name": "MCS_Team OLA XII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "55",
+          "name": "MCS_Team OLA XIII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XIII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "56",
+          "name": "MCS_Team OLA XIV",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XIV",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "57",
+          "name": "MCS_Team OLA XV",
+          "customAttributes": null,
+          "id": "MCS_Team OLA XV",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "58",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "59",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "60",
+      "userId": "broberts",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "broberts",
+      "ntDomainUser": "ULTIMATEMEDICAL\\broberts",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "61",
+          "roleId": "Executive",
+          "name": "Executive",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "62",
+      "userId": "bwilliams",
+      "homeSite": "1",
+      "firstName": "Braun",
+      "lastName": "Williams",
+      "displayName": "Braun Williams",
+      "ntDomainUser": "ultimatemedical\\braunwilliams",
+      "extension": "8786",
+      "outboundANI": "8136058800",
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "63",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "64",
+      "userId": "cignaut",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "cignaut",
+      "ntDomainUser": "ULTIMATEMEDICAL\\CIgnaut",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "65",
+          "roleId": "Director",
+          "name": "Director",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "66",
+      "userId": "drizo",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "drizo",
+      "ntDomainUser": "ultimatemedical\\drizo",
+      "extension": "8805",
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "67",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "68",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "69",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "70",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "71",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "72",
+          "displayName": "AdmissionsRepConversion-All",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-All",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "73",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "74",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "75",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "76",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "77",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "78",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "79",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "80",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "81",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "82",
+      "userId": "dunhamb",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "dunhamb",
+      "ntDomainUser": "ultimatemedical\\bdunham",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "83",
+          "roleId": "Executive",
+          "name": "Executive",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "84",
+      "userId": "icsystem",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "icsystem",
+      "ntDomainUser": "ULTIMATEMEDICAL\\icsystem",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "85",
+          "name": "CompanyOperator",
+          "customAttributes": null,
+          "id": "CompanyOperator",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "86",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "87",
+      "userId": "InboundAdmissionsWarmXferVM",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "InboundAdmissionsWarmXferVM",
+      "ntDomainUser": null,
+      "extension": "1238",
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [],
+      "skills": [
+        {
+          "$id": "88",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "89",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "90",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "91",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "92",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "93",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "94",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "95",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "96",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "97",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "98",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "99",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "100",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "101",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "102",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "103",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "104",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "105",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "106",
+      "userId": "isazonov",
+      "homeSite": "1",
+      "firstName": "Ivan",
+      "lastName": "Sazonov",
+      "displayName": "Ivan Sazonov",
+      "ntDomainUser": "ultimatemedical\\isazonov",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "107",
+          "name": "MCS_ALL",
+          "customAttributes": null,
+          "id": "MCS_ALL",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "108",
+          "name": "MCS_Inbound Admissions",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "109",
+          "name": "MultiSite-UserSpan",
+          "customAttributes": null,
+          "id": "MultiSite-UserSpan",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "110",
+          "name": "Test",
+          "customAttributes": null,
+          "id": "Test",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "111",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "112",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "113",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "114",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "115",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 50,
+          "desireToUse": 0,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "116",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "117",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "118",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "119",
+          "displayName": "A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "120",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 100,
+          "desireToUse": 0,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "121",
+          "displayName": "AdmissionsRepConversion-All",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-All",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "122",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "123",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "124",
+          "displayName": "LeadSourceType-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "125",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "126",
+          "displayName": "Onl-Program-MOBS",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Program-MOBS",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "127",
+          "displayName": "LeadCapDoesNotApply",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCapDoesNotApply",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "128",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 0,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "129",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "130",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "131",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "132",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "133",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "134",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "135",
+      "userId": "jloucks",
+      "homeSite": "1",
+      "firstName": "Jason",
+      "lastName": "Loucks",
+      "displayName": "Jason Loucks",
+      "ntDomainUser": "ULTIMATEMEDICAL\\jloucks",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "136",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "137",
+      "userId": "kbehrens",
+      "homeSite": "1",
+      "firstName": "Kent",
+      "lastName": "Behrens",
+      "displayName": "kbehrens",
+      "ntDomainUser": null,
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "138",
+          "name": "Test",
+          "customAttributes": null,
+          "id": "Test",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "139",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "140",
+          "displayName": "A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "141",
+          "displayName": "AdmissionsRepConversion-All",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-All",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "142",
+      "userId": "mblack",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "mblack",
+      "ntDomainUser": "ultimatemedical\\mblack",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "143",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "144",
+      "userId": "MCS Conference Phone",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "MCS Conference Phone",
+      "ntDomainUser": null,
+      "extension": "2881",
+      "outboundANI": "8136058806",
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "145",
+          "roleId": "Executive",
+          "name": "Executive",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "146",
+      "userId": "MCS_CRU2",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "MCS_CRU2",
+      "ntDomainUser": null,
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "147",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "148",
+      "userId": "mstillson",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "mstillson",
+      "ntDomainUser": null,
+      "extension": "2875",
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "149",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "150",
+      "userId": "multisitetestuser-btbuat",
+      "homeSite": "902",
+      "firstName": "TestBTBUAT",
+      "lastName": "User",
+      "displayName": "MultiSiteTestUserBTBUAT",
+      "ntDomainUser": null,
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "151",
+          "name": "MultiSite-UserSpan",
+          "customAttributes": null,
+          "id": "MultiSite-UserSpan",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "152",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "153",
+      "userId": "Online SM Voicemail",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "Online SM Voicemail",
+      "ntDomainUser": null,
+      "extension": "1235",
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [],
+      "skills": [
+        {
+          "$id": "154",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "155",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "156",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "157",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "158",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "159",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "160",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "161",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "162",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "163",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "164",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "165",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "166",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "167",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "168",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "169",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "170",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "171",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "172",
+      "userId": "OnlineGradTeamVM",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "OnlineGradTeamVM",
+      "ntDomainUser": null,
+      "extension": "1236",
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [],
+      "skills": [
+        {
+          "$id": "173",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "174",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "175",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "176",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "177",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "178",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "179",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "180",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "181",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "182",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "183",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "184",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "185",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "186",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "187",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "188",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "189",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "190",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "191",
+      "userId": "Operator",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "Operator",
+      "ntDomainUser": null,
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "192",
+          "name": "CompanyOperator",
+          "customAttributes": null,
+          "id": "CompanyOperator",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "193",
+          "roleId": "Operator",
+          "name": "Operator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "194",
+      "userId": "PROD_SRV_BACON",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "PROD_SRV_BACON",
+      "ntDomainUser": null,
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "195",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "196",
+      "userId": "prod_srv_ic",
+      "homeSite": "1",
+      "firstName": "Prod",
+      "lastName": "MCS",
+      "displayName": "prod_srv_ic",
+      "ntDomainUser": "ULTIMATEMEDICAL\\PROD_SRV_IC",
+      "extension": "1233",
+      "outboundANI": "1233",
+      "workgroups": [
+        {
+          "$id": "197",
+          "name": "MCS_ALL",
+          "customAttributes": null,
+          "id": "MCS_ALL",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "198",
+          "name": "Test",
+          "customAttributes": null,
+          "id": "Test",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "199",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "200",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "201",
+          "displayName": "A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "202",
+          "displayName": "AdmissionsRepConversion-All",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-All",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "203",
+          "displayName": "LeadSourceType-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "204",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "205",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "206",
+      "userId": "PROD_SRV_LION",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "PROD_SRV_LION",
+      "ntDomainUser": null,
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "207",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "208",
+      "userId": "rhandsaker",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "rhandsaker",
+      "ntDomainUser": "ultimatemedical\\rhandsaker",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "209",
+          "name": "MCS_Team OLA VIII",
+          "customAttributes": null,
+          "id": "MCS_Team OLA VIII",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "210",
+          "roleId": "Business_Administrator",
+          "name": "Business_Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "211",
+      "userId": "sowen",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "sowen",
+      "ntDomainUser": "ULTIMATEMEDICAL\\rolewis",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "212",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "213",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "214",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "215",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "216",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "217",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "218",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "219",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "220",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "221",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "222",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "223",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "224",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "225",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "226",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "227",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "228",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "229",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "230",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "231",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "232",
+      "userId": "tadavis",
+      "homeSite": "1",
+      "firstName": null,
+      "lastName": null,
+      "displayName": "tadavis",
+      "ntDomainUser": "ULTIMATEMEDICAL\\tadavis",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "233",
+          "roleId": "Administrator",
+          "name": "Administrator",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "234",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "235",
+      "userId": "UAT_01",
+      "homeSite": "1",
+      "firstName": "UAT 01",
+      "lastName": "UAT 01",
+      "displayName": "UAT 01",
+      "ntDomainUser": null,
+      "extension": "2885",
+      "outboundANI": "8136058803",
+      "workgroups": [
+        {
+          "$id": "236",
+          "name": "MCS_ALL",
+          "customAttributes": null,
+          "id": "MCS_ALL",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "237",
+          "name": "MCS_Alpha",
+          "customAttributes": null,
+          "id": "MCS_Alpha",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "238",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "239",
+          "displayName": "LeadCap",
+          "proficiency": 100,
+          "desireToUse": 1,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "240",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "241",
+          "displayName": "LeadSourceType-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "242",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "243",
+      "userId": "UAT_02",
+      "homeSite": "1",
+      "firstName": "UAT 02",
+      "lastName": "UAT 02",
+      "displayName": "UAT 02",
+      "ntDomainUser": null,
+      "extension": "2886",
+      "outboundANI": "8136058810",
+      "workgroups": [
+        {
+          "$id": "244",
+          "name": "MCS_ALL",
+          "customAttributes": null,
+          "id": "MCS_ALL",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "245",
+          "name": "MCS_Alpha",
+          "customAttributes": null,
+          "id": "MCS_Alpha",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "246",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "247",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "248",
+          "displayName": "LeadSourceType-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "249",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "250",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "251",
+      "userId": "UAT_03",
+      "homeSite": "1",
+      "firstName": "UAT 03",
+      "lastName": "UAT 03",
+      "displayName": "UAT 03",
+      "ntDomainUser": "ULTIMATEMEDICAL\\alvbryant",
+      "extension": "2887",
+      "outboundANI": "8136058811",
+      "workgroups": [
+        {
+          "$id": "252",
+          "name": "MCS_ALL",
+          "customAttributes": null,
+          "id": "MCS_ALL",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "253",
+          "name": "MCS_Alpha",
+          "customAttributes": null,
+          "id": "MCS_Alpha",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "254",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "255",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "256",
+          "displayName": "LeadSourceType-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "257",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "258",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "259",
+      "userId": "UAT_04",
+      "homeSite": "1",
+      "firstName": "UAT 04",
+      "lastName": "UAT 04",
+      "displayName": "UAT 04",
+      "ntDomainUser": "ULTIMATEMEDICAL\\cthorn",
+      "extension": "2888",
+      "outboundANI": "8136058812",
+      "workgroups": [
+        {
+          "$id": "260",
+          "name": "MCS_Inbound Admissions",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "261",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "262",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "263",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "264",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "265",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "266",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "267",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "268",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "269",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "270",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "271",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "272",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "273",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "274",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "275",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "276",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "277",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "278",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "279",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "280",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+        },
+        {
+          "$id": "281",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.704254-04:00"
+    },
+    {
+      "$id": "282",
+      "userId": "UAT_05",
+      "homeSite": "1",
+      "firstName": "UAT 05",
+      "lastName": "UAT 05",
+      "displayName": "UAT 05",
+      "ntDomainUser": null,
+      "extension": "2889",
+      "outboundANI": "8136058807",
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "283",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "284",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "285",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "286",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "287",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "288",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "289",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "290",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "291",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "292",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "293",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "294",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "295",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "296",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "297",
+      "userId": "UAT_06",
+      "homeSite": "1",
+      "firstName": "UAT 06",
+      "lastName": "UAT 06",
+      "displayName": "UAT 06",
+      "ntDomainUser": null,
+      "extension": "2890",
+      "outboundANI": "8136058803",
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "298",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "299",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "300",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "301",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "302",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "303",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "304",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "305",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "306",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "307",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "308",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "309",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "310",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "311",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "312",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "313",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "314",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "315",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "316",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "317",
+      "userId": "UAT_07",
+      "homeSite": "1",
+      "firstName": "UAT 07",
+      "lastName": "UAT 07",
+      "displayName": "UAT 07",
+      "ntDomainUser": null,
+      "extension": "2891",
+      "outboundANI": "8136058804",
+      "workgroups": [
+        {
+          "$id": "318",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "319",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "320",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "321",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "322",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "323",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "324",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "325",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "326",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "327",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "328",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "329",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "330",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "331",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "332",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "333",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "334",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "335",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "336",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "337",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "338",
+      "userId": "UAT_08",
+      "homeSite": "1",
+      "firstName": "UAT 08",
+      "lastName": "UAT 08",
+      "displayName": "UAT 08",
+      "ntDomainUser": "ULTIMATEMEDICAL\\ksavage",
+      "extension": "2892",
+      "outboundANI": "8136058805",
+      "workgroups": [
+        {
+          "$id": "339",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "340",
+          "roleId": "International_Dialing",
+          "name": "International_Dialing",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "341",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "342",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "343",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "344",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "345",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "346",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "347",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "348",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "349",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "350",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "351",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "352",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "353",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "354",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "355",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "356",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "357",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "358",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "359",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "360",
+      "userId": "UAT_09",
+      "homeSite": "1",
+      "firstName": "UAT 09",
+      "lastName": "UAT 09",
+      "displayName": "UAT 09",
+      "ntDomainUser": null,
+      "extension": "2893",
+      "outboundANI": "8136058806",
+      "workgroups": [
+        {
+          "$id": "361",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "362",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "363",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "364",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "365",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "366",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "367",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "368",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "369",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "370",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "371",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "372",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "373",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "374",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "375",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "376",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "377",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "378",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "379",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "380",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "381",
+      "userId": "UAT_10",
+      "homeSite": "1",
+      "firstName": "UAT 10",
+      "lastName": "UAT 10",
+      "displayName": "UAT 10",
+      "ntDomainUser": null,
+      "extension": "2894",
+      "outboundANI": "8136058810",
+      "workgroups": [
+        {
+          "$id": "382",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "383",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "384",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "385",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "386",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "387",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "388",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "389",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "390",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "391",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "392",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "393",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "394",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "395",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "396",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "397",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "398",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "399",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "400",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "401",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "402",
+      "userId": "UAT_11",
+      "homeSite": "1",
+      "firstName": "UAT 11",
+      "lastName": "UAT 11",
+      "displayName": "UAT 11",
+      "ntDomainUser": null,
+      "extension": "2895",
+      "outboundANI": "2822812180",
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "403",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "404",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "405",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "406",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "407",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "408",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "409",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "410",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "411",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "412",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "413",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "414",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "415",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "416",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "417",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "418",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "419",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "420",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "421",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "422",
+      "userId": "UAT_12",
+      "homeSite": "1",
+      "firstName": "UAT 12",
+      "lastName": "UAT 12",
+      "displayName": "UAT 12",
+      "ntDomainUser": null,
+      "extension": "2896",
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "423",
+          "name": "MCS_Inbound Admissions",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "424",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "425",
+          "name": "MCS_Team OLA I",
+          "customAttributes": null,
+          "id": "MCS_Team OLA I",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "426",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "427",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "428",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "429",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "430",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "431",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "432",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "433",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "434",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 100,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "435",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "436",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "437",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 100,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "438",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 100,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "439",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "440",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "441",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "442",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "443",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "444",
+      "userId": "UAT_13",
+      "homeSite": "1",
+      "firstName": "UAT 13",
+      "lastName": "UAT 13",
+      "displayName": "UAT 13",
+      "ntDomainUser": null,
+      "extension": "2897",
+      "outboundANI": "8136058810",
+      "workgroups": [
+        {
+          "$id": "445",
+          "name": "MCS_Inbound Admissions",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "446",
+          "name": "MCS_Inbound Admissions Military",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "447",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "448",
+          "name": "MCS_Online Admissions Cancels",
+          "customAttributes": null,
+          "id": "MCS_Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "449",
+          "name": "MCS_Online Student Management",
+          "customAttributes": null,
+          "id": "MCS_Online Student Management",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "450",
+          "name": "MCS_ReEnroll Team",
+          "customAttributes": null,
+          "id": "MCS_ReEnroll Team",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "451",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "452",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "453",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "454",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "455",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "456",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "457",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "458",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "459",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "460",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "461",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "462",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "463",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "464",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "465",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "466",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "467",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "468",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "469",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "470",
+      "userId": "UAT_14",
+      "homeSite": "1",
+      "firstName": "UAT 14",
+      "lastName": "UAT 14",
+      "displayName": "UAT 14",
+      "ntDomainUser": null,
+      "extension": "2898",
+      "outboundANI": "8136058811",
+      "workgroups": [
+        {
+          "$id": "471",
+          "name": "MCS_Inbound Admissions",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "472",
+          "name": "MCS_Inbound Admissions Military",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "473",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "474",
+          "name": "MCS_Online Admissions Cancels",
+          "customAttributes": null,
+          "id": "MCS_Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "475",
+          "name": "MCS_Online Student Management",
+          "customAttributes": null,
+          "id": "MCS_Online Student Management",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "476",
+          "name": "MCS_ReEnroll Team",
+          "customAttributes": null,
+          "id": "MCS_ReEnroll Team",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "477",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "478",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "479",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "480",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "481",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "482",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "483",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "484",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "485",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "486",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "487",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "488",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "489",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "490",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "491",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "492",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "493",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "494",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "495",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "496",
+      "userId": "UAT_15",
+      "homeSite": "1",
+      "firstName": "UAT 15",
+      "lastName": "UAT 15",
+      "displayName": "UAT 15",
+      "ntDomainUser": null,
+      "extension": "2899",
+      "outboundANI": "8136058812",
+      "workgroups": [
+        {
+          "$id": "497",
+          "name": "MCS_Inbound Admissions",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "498",
+          "name": "MCS_Inbound Admissions Military",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "499",
+          "name": "MCS_Inbound Admissions Warm Xfers",
+          "customAttributes": null,
+          "id": "MCS_Inbound Admissions Warm Xfers",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "500",
+          "name": "MCS_Online Admissions Cancels",
+          "customAttributes": null,
+          "id": "MCS_Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "501",
+          "name": "MCS_Online Student Management",
+          "customAttributes": null,
+          "id": "MCS_Online Student Management",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "502",
+          "name": "MCS_ReEnroll Team",
+          "customAttributes": null,
+          "id": "MCS_ReEnroll Team",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "503",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "504",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "505",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "506",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "507",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "508",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "509",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "510",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "511",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "512",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "513",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "514",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "515",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "516",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "517",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "518",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "519",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "520",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "521",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "522",
+      "userId": "vpatel",
+      "homeSite": "1",
+      "firstName": "Vat",
+      "lastName": "Patel",
+      "displayName": "Vat Patel",
+      "ntDomainUser": "ULTIMATEMEDICAL\\vpatel",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "523",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "524",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "525",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "526",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "527",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "528",
+          "displayName": "AdmissionsRepConversion-All",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-All",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "529",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "530",
+          "displayName": "LeadCap",
+          "proficiency": 10,
+          "desireToUse": 0,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "531",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "532",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "533",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "534",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "535",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "536",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "537",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "538",
+      "userId": "zmiller",
+      "homeSite": "1",
+      "firstName": "Zak",
+      "lastName": "Miller",
+      "displayName": "Zak Miller",
+      "ntDomainUser": "ULTIMATEMEDICAL\\zmiller",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [
+        {
+          "$id": "539",
+          "name": "MCS_ALL",
+          "customAttributes": null,
+          "id": "MCS_ALL",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "540",
+          "name": "MultiSite-UserSpan",
+          "customAttributes": null,
+          "id": "MultiSite-UserSpan",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "541",
+          "name": "Test",
+          "customAttributes": null,
+          "id": "Test",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "roles": [
+        {
+          "$id": "542",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [
+        {
+          "$id": "543",
+          "displayName": "Onl-Program-HS-PHT",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Program-HS-PHT",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "544",
+          "displayName": "CSSkill2",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "CSSkill2",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "545",
+          "displayName": "Online Admissions Cancels",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Online Admissions Cancels",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "546",
+          "displayName": "Onl-Region-AL",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-AL",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "547",
+          "displayName": "Onl-Region-OK",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OK",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "548",
+          "displayName": "LeadCampus-UMA CLW",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA CLW",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "549",
+          "displayName": "Onl-Region-DE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-DE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "550",
+          "displayName": "Onl-Region-OR",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-OR",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "551",
+          "displayName": "Non-Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Non-Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "552",
+          "displayName": "Onl-SPM-A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-SPM-A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "553",
+          "displayName": "A",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "A",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "554",
+          "displayName": "AdmissionsRepConversion-All",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-All",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "555",
+          "displayName": "LeadSourceType-Chat",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Chat",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "556",
+          "displayName": "LeadCampus-UMA TMP",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCampus-UMA TMP",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "557",
+          "displayName": "LeadCap",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCap",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "558",
+          "displayName": "Onl-Program-MAA",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Program-MAA",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "559",
+          "displayName": "LeadCount",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCount",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "560",
+          "displayName": "LeadSourceType-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadSourceType-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "561",
+          "displayName": "GradTeam",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "GradTeam",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "562",
+          "displayName": "Onl-Program-MOBS",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Program-MOBS",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "563",
+          "displayName": "LeadCapDoesNotApply",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "LeadCapDoesNotApply",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "564",
+          "displayName": "AdmissionsRepConversion-H",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-H",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "565",
+          "displayName": "AdmissionsRepConversion-L",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-L",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "566",
+          "displayName": "AdmissionsRepConversion-M",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "AdmissionsRepConversion-M",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "567",
+          "displayName": "Military",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Military",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "568",
+          "displayName": "Onl-Program-HS-HTS",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Program-HS-HTS",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "569",
+          "displayName": "Onl-Region-NE",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NE",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "570",
+          "displayName": "Onl-Region-WestCoast",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-WestCoast",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "571",
+          "displayName": "Onl-Region-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "572",
+          "displayName": "Onl-Program-Other",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Program-Other",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "573",
+          "displayName": "Onl-Region-NJ",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "Onl-Region-NJ",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        },
+        {
+          "$id": "574",
+          "displayName": "CSSkill1",
+          "proficiency": 1,
+          "desireToUse": 1,
+          "id": "CSSkill1",
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    },
+    {
+      "$id": "575",
+      "userId": "znesmith",
+      "homeSite": "1",
+      "firstName": "Zane",
+      "lastName": "Smith",
+      "displayName": "znesmith",
+      "ntDomainUser": "ultimatemedical\\znesmith",
+      "extension": null,
+      "outboundANI": null,
+      "workgroups": [],
+      "roles": [
+        {
+          "$id": "576",
+          "roleId": "Agent",
+          "name": "Agent",
+          "id": 0,
+          "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+        }
+      ],
+      "skills": [],
+      "customAttributes": {},
+      "id": 0,
+      "dateAdded": "2019-03-27T10:31:48.7198843-04:00"
+    }
+  ],
+  "status": 1,
+  "errorMessage": null,
+  "exception": null,
+  "executionStartTime": "2019-03-27T10:31:48.610519-04:00",
+  "executionEndTime": "2019-03-27T10:31:48.7198843-04:00",
+  "id": 13373728,
+  "dateAdded": "2019-03-27T10:31:48.610519-04:00"
+}

@@ -3,6 +3,7 @@ import json
 import requests
 from .config import get_config
 from src.mssql_connection import execute_sp, get_sp_result_set
+from src.utils import format_date
 
 
 config = get_config()
@@ -53,7 +54,7 @@ def save_rep(rep):
 			'REP_outboundANI': rep['outboundANI'],
 			'REP_id_LIST': rep['id'],
 			'REP_customAttributes': json.dumps(rep['customAttributes']),
-			'REP_dateAdded': rep['dateAdded']
+			'REP_dateAdded': format_date(parse_date(rep['dateAdded']))
 		}
 	)
 	
@@ -70,7 +71,7 @@ def save_rep_skill(rep_id, rep_skill):
 			'REP_SKILL_proficiency': rep_skill['proficiency'],
 			'REP_SKILL_desireToUse': rep_skill['desireToUse'],
 			'REP_SKILL_id_ALTERNATE': rep_skill['id'],
-			'REP_SKILL_dateAdded': rep_skill['dateAdded']
+			'REP_SKILL_dateAdded': format_date(parse_date(rep_skill['dateAdded']))
 		}
 	)
 	
@@ -86,7 +87,7 @@ def save_rep_role(rep_id, rep_role):
 			'REP_ROLE_roleId': rep_role['roleId'],
 			'REP_ROLE_name': rep_role['name'],
 			'REP_ROLE_id_ALTERNATE': rep_role['id'],
-			'REP_SKILL_dateAdded': rep_role['dateAdded']
+			'REP_SKILL_dateAdded': format_date(parse_date(rep_role['dateAdded']))
 		}
 	)
 	
@@ -102,8 +103,15 @@ def save_rep_workgroup(rep_id, rep_workgroup):
 			'REP_WORKGROUP_Name': rep_workgroup['name'],
 			'REP_WORKGROUP_customAttributes': json.dumps(rep_workgroup['customAttributes']),
 			'REP_WORKGROUP_id_ALTERNATE': rep_workgroup['id'],
-			'REP_WORKGROUP_dateAdded': rep_workgroup['dateAdded']
+			'REP_WORKGROUP_dateAdded': format_date(parse_date(rep_workgroup['dateAdded']))
 		}
 	)
 	
 	return get_sp_result_set(results)
+
+
+def parse_date(value):
+	if value:
+		return value.split('.', 1)[0]
+
+	return ''

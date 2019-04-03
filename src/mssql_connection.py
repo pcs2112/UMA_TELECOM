@@ -212,3 +212,11 @@ def execute_sp(sp_name, in_args, out_arg=None):
 	cursor.close()
 
 	return result
+
+
+def get_sp_result_set(results, index=0):
+	""" Utility to return a specified result set from results from a SP call. """
+	if len(results) < 1:
+		return False
+		
+	return results[index]

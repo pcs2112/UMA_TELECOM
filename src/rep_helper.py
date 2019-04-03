@@ -7,15 +7,15 @@ from .config import get_config
 config = get_config()
 
 
-def fetch_data():
-	""" Return the telecom rep json data. """
+def fetch_api_rep_data():
+	""" Return the Telecom API rep json data. """
 	if config['IS_PRODUCTION']:
-		return fetch_prod_data()
+		return fetch_api_prod_rep_data()
 	
-	return fetch_test_data()
+	return fetch_api_test_rep_data()
 
 
-def fetch_test_data():
+def fetch_api_test_rep_data():
 	""" Returns JSON payload containing the test data. """
 	file_path = os.path.join(config['ROOT_DIR'], 'test_data.json')
 	if os.path.exists(file_path) is False:
@@ -27,7 +27,7 @@ def fetch_test_data():
 	return json.loads(contents)
 	
 
-def fetch_prod_data():
+def fetch_api_prod_rep_data():
 	""" Returns JSON payload containing the production data. """
 	result = requests.get(config['TELECOM_REP_ENDPOINT'])
 	if result.status_code != 200:

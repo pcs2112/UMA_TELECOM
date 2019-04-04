@@ -220,3 +220,14 @@ def get_sp_result_set(results, index=0):
 		return False
 		
 	return results[index]
+
+
+def get_sp_first_result(results):
+	""" Utility to return the first result from results from a SP call. """
+	if len(results) < 1:
+		return False
+	
+	if len(results[0]) < 1:
+		return False
+	
+	return results[0][0]

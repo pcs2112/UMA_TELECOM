@@ -2,7 +2,7 @@ import os
 import json
 import requests
 from .config import get_config
-from src.mssql_connection import execute_sp, get_sp_result_set
+from src.mssql_connection import execute_sp, get_sp_first_result
 from src.utils import format_date
 
 
@@ -58,7 +58,11 @@ def save_rep(rep):
 		}
 	)
 	
-	return get_sp_result_set(results)
+	result = get_sp_first_result(results)
+	if not result:
+		return False
+	
+	return result['rep_id']
 
 
 def save_rep_skill(rep_id, rep_skill):
@@ -66,6 +70,7 @@ def save_rep_skill(rep_id, rep_skill):
 	results = execute_sp(
 		'UMA_TELECOM.SAVE_D_REP_SKILL',
 		{
+			'D_REP_ID': rep_id,
 			'REP_SKILL_ID': rep_skill['$id'],
 			'REP_SKILL_displayName': rep_skill['displayName'],
 			'REP_SKILL_proficiency': rep_skill['proficiency'],
@@ -75,7 +80,7 @@ def save_rep_skill(rep_id, rep_skill):
 		}
 	)
 	
-	return get_sp_result_set(results)
+	return get_sp_first_result(results)
 
 
 def save_rep_role(rep_id, rep_role):
@@ -83,15 +88,16 @@ def save_rep_role(rep_id, rep_role):
 	results = execute_sp(
 		'UMA_TELECOM.SAVE_D_REP_ROLE',
 		{
+			'D_REP_ID': rep_id,
 			'REP_ROLE_ID': rep_role['$id'],
 			'REP_ROLE_roleId': rep_role['roleId'],
 			'REP_ROLE_name': rep_role['name'],
 			'REP_ROLE_id_ALTERNATE': rep_role['id'],
-			'REP_SKILL_dateAdded': format_date(parse_date(rep_role['dateAdded']))
+			'REP_ROLE_dateAdded': format_date(parse_date(rep_role['dateAdded']))
 		}
 	)
 	
-	return get_sp_result_set(results)
+	return get_sp_first_result(results)
 
 
 def save_rep_workgroup(rep_id, rep_workgroup):
@@ -99,6 +105,7 @@ def save_rep_workgroup(rep_id, rep_workgroup):
 	results = execute_sp(
 		'UMA_TELECOM.SAVE_D_REP_WORKGROUP',
 		{
+			'D_REP_ID': rep_id,
 			'REP_WORKGROUP_ID': rep_workgroup['$id'],
 			'REP_WORKGROUP_Name': rep_workgroup['name'],
 			'REP_WORKGROUP_customAttributes': json.dumps(rep_workgroup['customAttributes']),
@@ -107,7 +114,7 @@ def save_rep_workgroup(rep_id, rep_workgroup):
 		}
 	)
 	
-	return get_sp_result_set(results)
+	return get_sp_first_result(results)
 
 
 def parse_date(value):

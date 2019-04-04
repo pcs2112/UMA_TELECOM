@@ -28,8 +28,6 @@ def process_reps():
 	
 	if total_count > 0:
 		for rep in data['dataList']:
-			print(f"processing record {format_number(total_processed)} of {format_number(total_count)}")
-			
 			rep_id = save_rep(rep)
 			
 			if rep_id:

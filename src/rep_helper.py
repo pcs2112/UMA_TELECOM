@@ -9,6 +9,14 @@ from src.utils import format_date
 config = get_config()
 
 
+def _get_custom_attributes(custom_attributes):
+	custom_attrs = json.dumps(custom_attributes)
+	if custom_attrs == '{}':
+		custom_attrs = None
+		
+	return custom_attrs
+
+
 def fetch_api_rep_data():
 	""" Return the Telecom API rep json data. """
 	if config['IS_PRODUCTION']:
@@ -53,7 +61,7 @@ def save_rep(rep):
 			'REP_extension': rep['extension'],
 			'REP_outboundANI': rep['outboundANI'],
 			'REP_id_LIST': rep['id'],
-			'REP_customAttributes': json.dumps(rep['customAttributes']),
+			'REP_customAttributes': _get_custom_attributes(rep['customAttributes']),
 			'REP_dateAdded': format_date(parse_date(rep['dateAdded']))
 		}
 	)
@@ -108,7 +116,7 @@ def save_rep_workgroup(rep_id, rep_workgroup):
 			'D_REP_ID': rep_id,
 			'REP_WORKGROUP_ID': rep_workgroup['$id'],
 			'REP_WORKGROUP_Name': rep_workgroup['name'],
-			'REP_WORKGROUP_customAttributes': json.dumps(rep_workgroup['customAttributes']),
+			'REP_WORKGROUP_customAttributes': _get_custom_attributes(rep_workgroup['customAttributes']),
 			'REP_WORKGROUP_id_ALTERNATE': rep_workgroup['id'],
 			'REP_WORKGROUP_dateAdded': format_date(parse_date(rep_workgroup['dateAdded']))
 		}

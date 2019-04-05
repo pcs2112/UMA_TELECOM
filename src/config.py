@@ -19,7 +19,7 @@ config = {
 	'DB_TRUSTED_CONNECTION': os.getenv('DB_TRUSTED_CONNECTION') == '1',
 	'ROOT_DIR': ROOT_DIR,
 	'IS_PRODUCTION': os.getenv('PRODUCTION') == '1',
-	'TELECOM_REP_ENDPOINT': 'http://lionwebapiuat-fr.ultimatemedical.edu/api/v2/Telecom/GetAllUsers'
+	'TELECOM_REP_ENDPOINT': 'http://lionwebapi-fr.ultimatemedical.edu/api/v2/Telecom/GetAllUsers'
 }
 
 

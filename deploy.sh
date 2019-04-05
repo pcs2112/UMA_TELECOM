@@ -14,5 +14,5 @@ cp "$_cwd/app.py" "$_targetRoot/$_rootDirName/app.py"
 cp "$_cwd/requirements.txt" "$_targetRoot/$_rootDirName/requirements.txt"
 cp "$_cwd/test_data.json" "$_targetRoot/$_rootDirName/test_data.json"
 find "$_targetRoot/$_rootDirName" | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
-cd "$_targetRoot"
-zip -r "$_targetRoot/$_rootDirName.zip" ./${_rootDirName}/*
+cd "$_targetRoot/${_rootDirName}"
+zip -r "$_targetRoot/$_rootDirName.zip" .

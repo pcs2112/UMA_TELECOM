@@ -2,7 +2,7 @@ import os
 import json
 import requests
 from .config import get_config
-from src.mssql_connection import execute_sp, get_sp_first_result
+from py_utils.mssql_db import execute_sp, get_sp_first_result_set
 from src.utils import format_date
 
 
@@ -66,7 +66,7 @@ def save_rep(rep):
 		}
 	)
 	
-	result = get_sp_first_result(results)
+	result = get_sp_first_result_set(results)
 	if not result:
 		return False
 	
@@ -88,7 +88,7 @@ def save_rep_skill(rep_id, rep_skill):
 		}
 	)
 	
-	return get_sp_first_result(results)
+	return get_sp_first_result_set(results)
 
 
 def save_rep_role(rep_id, rep_role):
@@ -105,7 +105,7 @@ def save_rep_role(rep_id, rep_role):
 		}
 	)
 	
-	return get_sp_first_result(results)
+	return get_sp_first_result_set(results)
 
 
 def save_rep_workgroup(rep_id, rep_workgroup):
@@ -122,7 +122,7 @@ def save_rep_workgroup(rep_id, rep_workgroup):
 		}
 	)
 	
-	return get_sp_first_result(results)
+	return get_sp_first_result_set(results)
 
 
 def parse_date(value):

@@ -54,5 +54,6 @@ def process_reps():
 	print(f"TOTAL ROWS PROCESSED: {format_number(summary['return_value'])}")
 	print(f"TOTAL NEW REPS: {format_number(summary['new_rep_count'])}")
 	print(f"TOTAL ROWS REMOVED: {format_number(summary['removed_count'])}")
+	print(f"MASTER LOAD HISTORY ID: {master_load_id}")
 
 	close()

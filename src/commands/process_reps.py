@@ -1,4 +1,4 @@
-from src.mssql_connection import init_db
+from py_utils.mssql_db import init_db
 from src.config import get_config
 from src.rep_helper import fetch_api_rep_data, save_rep, save_rep_role, save_rep_skill, save_rep_workgroup
 from src.utils import format_number

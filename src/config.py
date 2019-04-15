@@ -11,17 +11,17 @@ load_dotenv(dotenv_path)
 # Set the settings
 
 config = {
-	'DB_SERVER': os.getenv('DB_HOST'),
-	'DB_NAME': os.getenv('DB_NAME'),
-	'DB_USER': os.getenv('DB_USER'),
-	'DB_PASSWORD': os.getenv('DB_PASSWORD'),
-	'DB_DRIVER': os.getenv('DB_DRIVER'),
-	'DB_TRUSTED_CONNECTION': os.getenv('DB_TRUSTED_CONNECTION') == '1',
-	'ROOT_DIR': ROOT_DIR,
-	'IS_PRODUCTION': os.getenv('PRODUCTION') == '1',
-	'TELECOM_REP_ENDPOINT': 'http://lionwebapi-fr.ultimatemedical.edu/api/v2/Telecom/GetAllUsers'
+    'DB_SERVER': os.getenv('DB_HOST'),
+    'DB_NAME': os.getenv('DB_NAME'),
+    'DB_USER': os.getenv('DB_USER'),
+    'DB_PASSWORD': os.getenv('DB_PASSWORD'),
+    'DB_DRIVER': os.getenv('DB_DRIVER'),
+    'DB_TRUSTED_CONNECTION': os.getenv('DB_TRUSTED_CONNECTION') == '1',
+    'ROOT_DIR': ROOT_DIR,
+    'IS_PRODUCTION': os.getenv('PRODUCTION') == '1',
+    'TELECOM_REP_ENDPOINT': 'http://lionwebapi-fr.ultimatemedical.edu/api/v2/Telecom/GetAllUsers'
 }
 
 
 def get_config():
-	return config
+    return config

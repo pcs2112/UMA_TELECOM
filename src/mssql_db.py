@@ -3,9 +3,10 @@ import sys
 import pyodbc
 import re
 
+
 this = sys.modules[__name__]
 this._database = None
-this._config = None  # Reference to the DB configuration settings
+this._config = None
 
 
 def init_db(config):
@@ -33,7 +34,7 @@ def get_db():
                 config['DB_SERVER'],
                 config['DB_NAME']
             )
-            
+
             db = this._database = pyodbc.connect(
                 cnxn_str,
                 autocommit=True
@@ -94,7 +95,7 @@ def result_set_as_dicts(schema, rows):
 def normalize_column_name(name):
     """Function to convert column names to snake case"""
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
-    return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
+    return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).replace(' ', '_').replace('__', '_').lower()
 
 
 def get_column_names(result_set_description):
@@ -108,9 +109,9 @@ def get_column_names(result_set_description):
         column_name = description[0]
         if not column_name:
             column_name = f'COLUMN_{i}'
-        
+
         column_names.append(normalize_column_name(column_name))
-    
+
     return column_names
 
 
@@ -130,10 +131,10 @@ def fetch_rows(sql, in_args=()):
     rows = cursor.fetchall()
     column_names = get_column_names(cursor.description)
     cursor.close()
-    
+
     if len(rows) < 1:
         return ()
-    
+
     return result_set_as_dicts(column_names, rows)
 
 
@@ -153,14 +154,14 @@ def fetch_row(sql, in_args=()):
     row = cursor.fetchone()
     column_names = get_column_names(cursor.description)
     cursor.close()
-    
+
     if row is None:
         return None
-    
+
     return result_as_dict(column_names, row)
 
 
-def execute_sp(sp_name, in_args, out_arg=None, as_dict=True):
+def execute_sp(sp_name, in_args={}, out_arg=None, as_dict=True):
     """
     Executes a stored procedure and returns the result sets.
     The 0 index in the return value contains the value for the out_arg if an out_arg is specified.
@@ -177,34 +178,41 @@ def execute_sp(sp_name, in_args, out_arg=None, as_dict=True):
     :rtype: list
     """
     sql = ''
+    exec_sql = ''
     
     if out_arg:
         out_arg = out_arg.lower()
         sql = f'DECLARE @{out_arg} INTEGER;'
         sql += f'EXEC @{out_arg} = {sp_name} '
+        exec_sql = f'EXEC {sp_name} '
     else:
         sql += f'EXEC {sp_name} '
-    
+        exec_sql = f'EXEC {sp_name} '
+
     in_params = []
     for key in in_args:
         sql += f'@{key} = ?, '
         in_param = in_args[key]
         if in_param is not None:
             in_param = str(in_param)
-        
+  
         in_params.append(in_param)  # Convert all in args to string
-    
+        exec_sql += f"'{in_param}', "
+
     sql = sql.rstrip(', ')
     sql += f';'
-    
+
+    exec_sql = exec_sql.rstrip(', ')
+    exec_sql += f';'
+
     if out_arg is not None:
         sql += f'SELECT @{out_arg} AS {out_arg};'
-    
+
     cursor = get_db().cursor()
     cursor.execute(sql, in_params)
-    
+
     results = []
-    
+
     while 1:
         try:
             result_set = cursor.fetchall()
@@ -219,32 +227,28 @@ def execute_sp(sp_name, in_args, out_arg=None, as_dict=True):
                 results.append(result_set)
         except pyodbc.ProgrammingError:
             pass
-        
+
         if cursor.nextset() is not True:
             break
-    
+
     cursor.close()
     
     # Validate out arg was provided from the SP call
     if out_arg:
         get_out_arg(results, out_arg)
-    
+
     return results
 
 
 def get_sp_result_set(results, index=0, out_arg=None):
-    """
-    Utility to return a specified result set from results from a SP call.
-    :return:
-    :rtype: list or bool
-    """
+    """ Utility to return a specified result set from results from a SP call. """
     results_set_count = len(results)
     if results_set_count < 1:
         return False
     
     if results_set_count == 1 and out_arg and out_arg in results[0][0]:
         return False
-    
+
     return results[index]
 
 

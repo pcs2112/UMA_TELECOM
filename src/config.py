@@ -19,7 +19,9 @@ config = {
     'DB_TRUSTED_CONNECTION': os.getenv('DB_TRUSTED_CONNECTION') == '1',
     'ROOT_DIR': ROOT_DIR,
     'IS_PRODUCTION': os.getenv('PRODUCTION') == '1',
-    'TELECOM_REP_ENDPOINT': 'http://lionwebapi-fr.ultimatemedical.edu/api/v2/Telecom/GetAllUsers'
+    'TELECOM_REP_ENDPOINT': 'http://lionwebapi-fr.ultimatemedical.edu/api/v2/Telecom/GetAllUsers',
+    'OPSGENIE_API_KEY': os.getenv('OPSGENIE_API_KEY'),
+    'OPSGENIE_GENIE_KEY': os.getenv('OPSGENIE_GENIE_KEY')
 }
 
 

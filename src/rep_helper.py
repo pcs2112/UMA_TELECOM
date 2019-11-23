@@ -1,9 +1,9 @@
 import os
 import json
 import requests
-from .config import get_config
-from .mssql_db import execute_sp, get_sp_first_result_set
-from .utils import format_date
+from src.config import get_config
+from src.mssql_db import execute_sp, get_sp_first_result_set
+from src.utils import format_date
 
 config = get_config()
 
@@ -96,9 +96,10 @@ def save_rep(rep, master_load_id):
             'REP_customAttributes': _get_custom_attributes(rep['customAttributes']),
             'REP_dateAdded': format_date(parse_date(rep['dateAdded'])),
             'LOAD_HISTORY_PKID': master_load_id
-        }
+        },
+        out_arg='rep_id'
     )
-    
+
     result = get_sp_first_result_set(results)
     if not result:
         return False
@@ -108,7 +109,7 @@ def save_rep(rep, master_load_id):
 
 def save_rep_skill(rep_id, rep_skill, master_load_id):
     """ Saves the rep skill. """
-    results = execute_sp(
+    execute_sp(
         'UMA_TELECOM.SAVE_D_REP_SKILL',
         {
             'D_REP_ID': rep_id,
@@ -121,13 +122,11 @@ def save_rep_skill(rep_id, rep_skill, master_load_id):
             'LOAD_HISTORY_PKID': master_load_id
         }
     )
-    
-    return get_sp_first_result_set(results)
 
 
 def save_rep_role(rep_id, rep_role, master_load_id):
     """ Saves the rep role. """
-    results = execute_sp(
+    execute_sp(
         'UMA_TELECOM.SAVE_D_REP_ROLE',
         {
             'D_REP_ID': rep_id,
@@ -139,13 +138,11 @@ def save_rep_role(rep_id, rep_role, master_load_id):
             'LOAD_HISTORY_PKID': master_load_id
         }
     )
-    
-    return get_sp_first_result_set(results)
 
 
 def save_rep_workgroup(rep_id, rep_workgroup, master_load_id):
     """ Saves the rep workgroup. """
-    results = execute_sp(
+    execute_sp(
         'UMA_TELECOM.SAVE_D_REP_WORKGROUP',
         {
             'D_REP_ID': rep_id,
@@ -157,8 +154,6 @@ def save_rep_workgroup(rep_id, rep_workgroup, master_load_id):
             'LOAD_HISTORY_PKID': master_load_id
         }
     )
-    
-    return get_sp_first_result_set(results)
 
 
 def parse_date(value):

@@ -20,6 +20,7 @@ def opsgenie_alert():
     results = execute_sp('MWH.Ops_Gene_Alert_Check', {})
     if len(results) < 1 or len(results[0]) < 1:
       close()
+      print('No Alert found.')
       return
 
     error = results[0][0]
@@ -30,6 +31,18 @@ def opsgenie_alert():
       'IS_PRODUCTION': config['IS_PRODUCTION']
     })
 
-    send_alert_for_error(error)
+    alert = send_alert_for_error(error)
+    if not alert:
+      print('No OpsGenie alert sent.')
+    else:
+      print('OpsGenie alert sent:')
+      for key in error:
+        print(key, ':', error[key])
+
+      print('')
+      print('OpsGenie alert response:')
+      print('Request ID:', alert.request_id)
+      print('Result:', alert.result)
+      print('Took:', alert.took)
 
     close()

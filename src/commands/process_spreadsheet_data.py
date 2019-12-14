@@ -4,13 +4,12 @@ from src.config import get_config
 from src.csv_utils import read_workbook_columns, read_workbook_data
 from src.mssql_db import init_db, close, execute_sp
 from src.utils import format_number, get_now_datetime
+from src.scheduled_tasks_helper import execute_scheduled_tasks_sp
 
 
-def process_spreadsheet_data(file, resume='', row_limit_display=100):
+def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id=''):
 	if os.path.exists(file) is False:
 		raise FileExistsError(f"{file} is an invalid file.")
-
-	print('')
 
 	# Init DB connection
 	config = get_config()
@@ -55,6 +54,14 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100):
 
 	totals_rows = len(rows)
 
+	if task_id:
+		execute_scheduled_tasks_sp(
+			'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+			'START_PROCESSING_SCHEDULE_TASK',
+			str(task_id),
+			str(totals_rows)
+		)
+
 	for row_num, row in enumerate(rows):
 		curr_row = row_num + 1
 		to_row = row_num + row_limit_display
@@ -96,6 +103,14 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100):
 				null_count += 1
 			else:
 				error_count += 1
+
+	if task_id:
+		execute_scheduled_tasks_sp(
+			'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+			'FINISHED_PROCESSING_SCHEDULE_TASK',
+			str(task_id),
+			str(total)
+		)
 
 	# Close DB connection
 	close()

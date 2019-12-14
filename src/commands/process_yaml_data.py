@@ -2,10 +2,11 @@ import os
 import yaml
 from src.config import get_config
 from src.mssql_db import init_db, close, execute_sp
+from src.scheduled_tasks_helper import execute_scheduled_tasks_sp
 from src.utils import format_number
 
 
-def process_yaml_data(file):
+def process_yaml_data(file, task_id = ''):
 	if os.path.exists(file) is False:
 		raise FileExistsError(f"{file} is an invalid file.")
 
@@ -38,7 +39,17 @@ def process_yaml_data(file):
 	
 	print(f"Processing ...")
 
-	for key in yaml_data.keys():
+	yaml_keys = yaml_data.keys()
+
+	if task_id:
+		execute_scheduled_tasks_sp(
+			'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+			'START_PROCESSING_SCHEDULE_TASK',
+			str(task_id),
+			str(len(yaml_keys))
+		)
+
+	for key in yaml_keys:
 		tmp_item = yaml_data[key]
 		if 'type' not in tmp_item:
 			tmp_item['type'] = 'unknown'
@@ -85,6 +96,14 @@ def process_yaml_data(file):
 				calculate_update_count += 1
 			else:
 				error_count += 1
+
+	if task_id:
+		execute_scheduled_tasks_sp(
+			'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+			'FINISHED_PROCESSING_SCHEDULE_TASK',
+			str(task_id),
+			str(total)
+		)
 
 	# Close DB connection
 	close()

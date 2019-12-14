@@ -48,4 +48,5 @@ npm-debug.log
 logs/
 out/
 in/
+tmp/
 venv/

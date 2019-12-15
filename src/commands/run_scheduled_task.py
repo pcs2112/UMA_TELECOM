@@ -90,10 +90,7 @@ def run_scheduled_task():
     os.mkdir(tmp_dir)
     print('The tmp dir is empty...')
 
-    if scheduled_basename == 'MOST-RECENT-COHORTS-ALL-DATA-ELEMENTS.csv':
-        download_url = LATEST_DATA_URL
-        download_basename = 'MERGED'
-    elif '.csv' in scheduled_file_extension or '.yaml' in scheduled_basename:
+    if '.csv' in scheduled_file_extension or '.yaml' in scheduled_basename:
         download_url = ALL_DATA_URL
         download_basename = download_url[download_url.rfind('/')+1:]
     else:

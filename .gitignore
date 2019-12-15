@@ -50,3 +50,6 @@ out/
 in/
 tmp/
 venv/
+.venv/
+settings.json
+.vscode/

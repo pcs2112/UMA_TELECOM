@@ -28,8 +28,8 @@ def main(args):
         print(f"\"{args[1]}\" is an invalid command.")
         _exit()
 
-    module_exit = getattr(module, 'exit')
-    module_error_exit = getattr(module, 'error_exit')
+    module_exit = getattr(module, 'exit', None)
+    module_error_exit = getattr(module, 'error_exit', None)
     
     try:
         if len(args) > 2:

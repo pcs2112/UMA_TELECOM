@@ -8,12 +8,40 @@ from src.scheduled_tasks_helper import execute_scheduled_tasks_sp, get_next
 from .process_spreadsheet_data import process_spreadsheet_data
 from .process_yaml_data import process_yaml_data
 
+config = get_config()
 
 ALL_DATA_URL = 'https://ed-public-download.app.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip'
 LATEST_DATA_URL = 'https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Cohorts-All-Data-Elements.csv'
+LOCK_FILE = os.path.join(config['TMP_DIR'], 'run_scheduled_task.lock')
+
+
+def write_lock_file(task_id):
+    remove_lock_file()
+    f = open(LOCK_FILE, 'w')
+    f.write(str(task_id))
+    f.close()
+
+
+def remove_lock_file():
+    if os.path.exists(LOCK_FILE):
+        os.remove(LOCK_FILE)
+
+
+def get_current_task_id():
+    if not os.path.exists(LOCK_FILE):
+        return None
+
+    f = open(LOCK_FILE, 'r')
+    task_id = f.read()
+    f.close()
+    return task_id
+
 
 def run_scheduled_task():
-    config = get_config()
+    current_task_id = get_current_task_id()
+    if current_task_id:
+        print(f'Busy. Currently running task ID: {current_task_id}.')
+        return
 
     db_config = {
         'DB_DRIVER': config['DB_DRIVER'],
@@ -34,6 +62,9 @@ def run_scheduled_task():
         return
 
     task_id = str(next_task['id'])
+
+    # Write lock file
+    write_lock_file(task_id)
 
     # Normalize file names
     scheduled_url = next_task['ftp_site']
@@ -102,15 +133,23 @@ def run_scheduled_task():
     else:
         print('Exiting because the file was not found.')
         return
-    
-    # Close DB connection
-    close()
-    
+
     if '.csv' in scheduled_basename:
         process_spreadsheet_data(downloaded_filename, task_id=task_id)
     elif '.yaml' in scheduled_basename:
         process_yaml_data(downloaded_filename, task_id=task_id)
 
-    os.remove(downloaded_filename)
+    # Remove the temp dir
+    shutil.rmtree(tmp_dir, ignore_errors=True)
 
-    print('Done.')
+    # Remove the lock file
+    remove_lock_file()
+
+
+def exit():
+    close()
+
+
+def error_exit():
+    remove_lock_file()
+    close()

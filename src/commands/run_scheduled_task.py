@@ -11,7 +11,8 @@ from .process_yaml_data import process_yaml_data
 config = get_config()
 
 ALL_DATA_URL = 'https://ed-public-download.app.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip'
-LATEST_DATA_URL = 'https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Cohorts-All-Data-Elements.csv'
+LATEST_COHORTS_DATA_URL = 'https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Cohorts-All-Data-Elements.csv'
+LATEST_FIELD_OF_STUDY_DATA_URL = 'https://ed-public-download.app.cloud.gov/downloads/Most-Recent-Field-Data-Elements.csv'
 LOCK_FILE = os.path.join(config['TMP_DIR'], 'run_scheduled_task.lock')
 
 
@@ -90,11 +91,18 @@ def run_scheduled_task():
     os.mkdir(tmp_dir)
     print('The tmp dir is empty...')
 
-    if '.csv' in scheduled_file_extension or '.yaml' in scheduled_basename:
+    if next_task['python_job'] == 'MOST RECENT COLLEGE SCORECARD COHORTS DATA':
+        download_url = LATEST_COHORTS_DATA_URL
+        download_basename = download_url[download_url.rfind('/')+1:]
+    elif next_task['python_job'] == 'MOST RECENT COLLEGE SCORECARD FIELDS OF STUDY':
+        download_url = LATEST_FIELD_OF_STUDY_DATA_URL
+        download_basename = download_url[download_url.rfind('/')+1:]
+    elif '.csv' in scheduled_file_extension or '.yaml' in scheduled_basename:
         download_url = ALL_DATA_URL
         download_basename = download_url[download_url.rfind('/')+1:]
     else:
         print('Exiting because and invalid file name.')
+        error_exit()
         return
 
     download_filename = os.path.join(tmp_dir, download_basename)
@@ -116,7 +124,7 @@ def run_scheduled_task():
     if '.zip' in download_basename:
         downloaded_filename = os.path.join(tmp_dir, download_basename.replace('.zip', ''), scheduled_basename)
     else:
-        downloaded_filename = os.path.join(tmp_dir, scheduled_basename)
+        downloaded_filename = os.path.join(tmp_dir, download_basename)
 
     if os.path.exists(downloaded_filename):
         # Mark task download as finished
@@ -129,6 +137,7 @@ def run_scheduled_task():
         )
     else:
         print('Exiting because the file was not found.')
+        error_exit()
         return
 
     if '.csv' in scheduled_basename:

@@ -1,3 +1,5 @@
+import logging
+from logging.handlers import RotatingFileHandler
 from datetime import datetime
 from .mssql_db import execute_sp, get_out_arg
 
@@ -66,3 +68,25 @@ def execute_sp_with_required_in_args(*args, sp_args_length=10, out_arg='sp_statu
     get_out_arg(results, out_arg)
 
     return results
+
+
+def create_logger(filename, logger_name):
+    formatter = logging.Formatter("[%(asctime)s] %(levelname)s - %(message)s")
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(logging.DEBUG)
+
+    if logger_name == 'AppLogger':
+        handler = RotatingFileHandler(filename, maxBytes=100000, backupCount=5)
+    else:
+        handler = logging.FileHandler(filename, mode='a', encoding=None, delay=False)
+
+    handler.setLevel(logging.DEBUG)
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    return logger
+ 
+
+def log(msg):
+    print(msg)
+    logger = logging.getLogger('AppLogger')
+    logger.info(msg)

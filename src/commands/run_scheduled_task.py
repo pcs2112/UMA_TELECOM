@@ -2,9 +2,11 @@ import os
 import requests
 import zipfile
 import shutil
+import datetime
 from src.config import get_config
 from src.mssql_db import init_db, close, execute_sp
 from src.scheduled_tasks_helper import execute_scheduled_tasks_sp, get_next
+from src.utils import create_logger, log
 from .process_spreadsheet_data import process_spreadsheet_data
 from .process_yaml_data import process_yaml_data
 
@@ -41,7 +43,7 @@ def get_current_task_id():
 def run_scheduled_task():
     current_task_id = get_current_task_id()
     if current_task_id:
-        print(f'Busy. Currently running task ID: {current_task_id}.')
+        log(f'Busy. Currently running task ID: {current_task_id}.')
         return
 
     db_config = {
@@ -56,10 +58,10 @@ def run_scheduled_task():
     # Open DB connection
     init_db(db_config)
 
-    print('Getting the next task to be executed...')
+    log('Getting the next task to be executed...')
     next_task = get_next()
     if not next_task:
-        print('0 scheduled tasks to run.')
+        log('0 scheduled tasks to run.')
         return
 
     task_id = str(next_task['id'])
@@ -75,7 +77,7 @@ def run_scheduled_task():
     scheduled_basename = f'{scheduled_basename.upper()}{scheduled_file_extension}'
 
     # Mark task as running
-    print(f'Running task #{task_id}...')
+    log(f'Running task #{task_id}...')
 
     execute_scheduled_tasks_sp(
         'MWH.MANAGE_SCHEDULE_TASK_JOBS',
@@ -86,10 +88,11 @@ def run_scheduled_task():
 
     tmp_dir = os.path.join(config['TMP_DIR'], task_id)
 
-    print('Emptying the tmp dir...')
+    log('Emptying the tmp dir...')
     shutil.rmtree(tmp_dir, ignore_errors=True)
     os.mkdir(tmp_dir)
-    print('The tmp dir is empty...')
+
+    log('The tmp dir is empty...')
 
     if next_task['python_job'] == 'MOST RECENT COLLEGE SCORECARD COHORTS DATA':
         download_url = LATEST_COHORTS_DATA_URL
@@ -101,30 +104,37 @@ def run_scheduled_task():
         download_url = ALL_DATA_URL
         download_basename = download_url[download_url.rfind('/')+1:]
     else:
-        print('Exiting because and invalid file name.')
+        log('Exiting because and invalid file name.')
         error_exit()
         return
 
     download_filename = os.path.join(tmp_dir, download_basename)
 
-    print(f'Downloading {download_url}...')
+    log(f'Downloading {download_url}...')
     res = requests.get(download_url)
     with open(download_filename, 'wb') as f:
         f.write(res.content)
-    print(f'Finished downloading file.')
+    log(f'Finished downloading file.')
 
     if '.zip' in download_basename:
-        print(f'Extracting files...')
+        log(f'Extracting files...')
         with zipfile.ZipFile(download_filename, 'r') as zip_ref:
             zip_ref.extractall(tmp_dir)
 
-        print(f'Finished Extracting files.')
+        log(f'Finished Extracting files.')
 
     # Detect the type of file we're dealing with
     if '.zip' in download_basename:
         downloaded_filename = os.path.join(tmp_dir, download_basename.replace('.zip', ''), scheduled_basename)
     else:
         downloaded_filename = os.path.join(tmp_dir, download_basename)
+        new_downloaded_filename = os.path.join(tmp_dir, scheduled_basename)
+        shutil.copyfile(downloaded_filename, new_downloaded_filename) 
+        downloaded_filename = new_downloaded_filename
+        last_modified = datetime.datetime.timestamp(
+            datetime.datetime.strptime(res.headers['Last-Modified'], '%a, %d %b %Y %H:%M:%S %Z')
+        )
+        os.utime(downloaded_filename, (last_modified, last_modified))
 
     if os.path.exists(downloaded_filename):
         # Mark task download as finished
@@ -136,9 +146,12 @@ def run_scheduled_task():
             str(os.path.getsize(downloaded_filename))
         )
     else:
-        print('Exiting because the file was not found.')
+        log('Exiting because the file was not found.')
         error_exit()
         return
+    
+    # Close DB
+    close()
 
     if '.csv' in scheduled_basename:
         process_spreadsheet_data(downloaded_filename, task_id=task_id)

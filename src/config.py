@@ -19,6 +19,7 @@ config = {
     'DB_TRUSTED_CONNECTION': os.getenv('DB_TRUSTED_CONNECTION') == '1',
     'ROOT_DIR': ROOT_DIR,
     'TMP_DIR': os.path.join(ROOT_DIR, 'tmp'),
+    'LOGS_DIR': os.path.join(ROOT_DIR, 'logs'),
     'IN_DIR': os.path.join(ROOT_DIR, 'in'),
     'OUT_DIR': os.path.join(ROOT_DIR, 'out'),
     'IS_PRODUCTION': os.getenv('PRODUCTION') == '1',

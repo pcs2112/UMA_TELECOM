@@ -1,7 +1,13 @@
 import sys
+import os
 import importlib
+import logging
+from src.utils import create_logger, log
 from src.mssql_db import close as close_db
+from src.config import get_config
 
+
+config = get_config()
 arg_count = len(sys.argv)
 
 
@@ -12,6 +18,8 @@ def _exit(_exit=True):
 
 
 def main(args):
+    logger = create_logger(os.path.join(config['LOGS_DIR'], 'log.txt'), 'AppLogger')
+
     if len(args) == 1:
         print("Please enter a command.")
         _exit()
@@ -40,11 +48,13 @@ def main(args):
         if module_exit:
             module_exit()
 
-    except KeyboardInterrupt:
+    except KeyboardInterrupt as e:
+        logger.exception('KeyboardInterrupt: %s', e)
         if module_error_exit:
             module_error_exit()
         pass
     except Exception as e:
+        logger.exception('Exception: %s', e)
         if module_error_exit:
             module_error_exit()
 

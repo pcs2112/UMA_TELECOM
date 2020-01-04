@@ -1,9 +1,10 @@
 import os
 import ntpath
+import datetime
 from src.config import get_config
 from src.csv_utils import read_workbook_columns, read_workbook_data
 from src.mssql_db import init_db, close, execute_sp
-from src.utils import format_number, get_now_datetime
+from src.utils import format_number, get_now_datetime, log
 from src.scheduled_tasks_helper import execute_scheduled_tasks_sp
 
 
@@ -26,9 +27,34 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 
 	filename = ntpath.basename(file)
 	filepath = ntpath.dirname(file)
+	file_last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d %H:%M:%S')
 
 	start_at = 1
-	if resume != '':
+	if resume == '':
+		exists = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
+			'message': 'CHECK_IF_EXISTS',
+			'PATH': filepath,
+			'FILE_NAME': filename,
+			'COLUMN_NAME': '',
+			'COLUMN_POSITION': '',
+			'ROW_NUMBER': '',
+			'VALUE': '',
+			'FILE_LAST_MODIFIED_DTTM': file_last_modified
+		}, out_arg='return_flg')
+
+		if len(exists[0]) > 0:
+			if task_id:
+				execute_scheduled_tasks_sp(
+					'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+					'FINISHED_PROCESSING_SCHEDULE_TASK',
+					str(task_id),
+					'0'
+				)
+
+			log('File already exists. Nothing new to process.')
+			close()
+			return
+	else:
 		start_at_result = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
 			'message': 'GET_LAST_ROW',
 			'PATH': filepath,
@@ -36,7 +62,8 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 			'COLUMN_NAME': '',
 			'COLUMN_POSITION': '',
 			'ROW_NUMBER': '',
-			'VALUE': ''
+			'VALUE': '',
+			'FILE_LAST_MODIFIED_DTTM': ''
 		}, out_arg='return_flg')
 		start_at = start_at_result[0][0]['last_row']
 
@@ -73,12 +100,12 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 			to_row = totals_rows
 
 		if row_num % row_limit_display == 0:
-			print(f"{get_now_datetime()}: processing rows {format_number(curr_row)} to {format_number(to_row)} of {format_number(totals_rows)}")
+			log(f"{get_now_datetime()}: processing rows {format_number(curr_row)} to {format_number(to_row)} of {format_number(totals_rows)}")
 
 		for col_pos, col in enumerate(columns):
 			value = row[col_pos]
 			value_norm = value.lower()
-			if  value_norm == 'null' or value_norm == 'PrivacySuppressed':
+			if value_norm == 'null' or value_norm == 'PrivacySuppressed':
 				processed = 3
 			else:
 				result = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
@@ -88,7 +115,8 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 					'COLUMN_NAME': col,
 					'COLUMN_POSITION': str(col_pos + 1),
 					'ROW_NUMBER': str(row_num + 1),
-					'VALUE': value
+					'VALUE': value,
+					'FILE_LAST_MODIFIED_DTTM': file_last_modified
 				}, out_arg='return_flg')
 
 				processed = result[len(result) - 1][0]['return_flg']
@@ -115,9 +143,9 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 	# Close DB connection
 	close()
 
-	print("")
-	print(f"TOTAL: {format_number(total)}")
-	print(f"INSERT COUNT: {format_number(insert_count)}")
-	print(f"UPDATE COUNT: {format_number(update_count)}")
-	print(f"NULL COUNT: {format_number(null_count)}")
-	print(f"ERROR COUNT: {format_number(error_count)}")
+	log("")
+	log(f"TOTAL: {format_number(total)}")
+	log(f"INSERT COUNT: {format_number(insert_count)}")
+	log(f"UPDATE COUNT: {format_number(update_count)}")
+	log(f"NULL COUNT: {format_number(null_count)}")
+	log(f"ERROR COUNT: {format_number(error_count)}")

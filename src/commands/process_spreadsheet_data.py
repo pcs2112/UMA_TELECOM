@@ -1,71 +1,61 @@
 import os
 import ntpath
 import datetime
-from src.config import get_config
 from src.csv_utils import read_workbook_columns, read_workbook_data
-from src.mssql_db import init_db, close, execute_sp
+from src.mssql_db import execute_sp
 from src.utils import format_number, get_now_datetime, log
 from src.scheduled_tasks_helper import execute_scheduled_tasks_sp
 
 
-def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id=''):
+out_arg = 'return_flg'
+
+
+def get_last_row(filepath, filename):
+	start_at_result = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
+		'message': 'GET_LAST_ROW',
+		'PATH': filepath,
+		'FILE_NAME': filename,
+		'COLUMN_NAME': '',
+		'COLUMN_POSITION': '',
+		'ROW_NUMBER': '',
+		'VALUE': '',
+		'FILE_LAST_MODIFIED_DTTM': ''
+	}, out_arg=out_arg)
+	return start_at_result[0][0]['last_row']
+
+
+def process_spreadsheet_data(file, row_limit_display=100, task_id=''):
 	if os.path.exists(file) is False:
 		raise FileExistsError(f"{file} is an invalid file.")
 
-	# Init DB connection
-	config = get_config()
-	db_config = {
-		'DB_SERVER': config['DB_SERVER'],
-		'DB_NAME': config['DB_NAME'],
-		'DB_USER': config['DB_USER'],
-		'DB_PASSWORD': config['DB_PASSWORD'],
-		'DB_DRIVER': config['DB_DRIVER'],
-		'DB_TRUSTED_CONNECTION': config['DB_TRUSTED_CONNECTION']
-	}
-
-	init_db(db_config)
-
 	filename = ntpath.basename(file)
 	filepath = ntpath.dirname(file)
-	file_last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d %H:%M:%S')
+	file_last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(file))
+	file_last_modified_str = file_last_modified.strftime('%Y-%m-%d %H:%M:%S')
+	file_exists = False
 
 	start_at = 1
-	if resume == '':
-		exists = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
-			'message': 'CHECK_IF_EXISTS',
-			'PATH': filepath,
-			'FILE_NAME': filename,
-			'COLUMN_NAME': '',
-			'COLUMN_POSITION': '',
-			'ROW_NUMBER': '',
-			'VALUE': '',
-			'FILE_LAST_MODIFIED_DTTM': file_last_modified
-		}, out_arg='return_flg')
+	exists = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
+		'message': 'CHECK_IF_EXISTS',
+		'PATH': filepath,
+		'FILE_NAME': filename,
+		'COLUMN_NAME': '',
+		'COLUMN_POSITION': '',
+		'ROW_NUMBER': '',
+		'VALUE': '',
+		'FILE_LAST_MODIFIED_DTTM': file_last_modified_str
+	}, out_arg=out_arg)
 
-		if len(exists[0]) > 0:
-			if task_id:
-				execute_scheduled_tasks_sp(
-					'MWH.MANAGE_SCHEDULE_TASK_JOBS',
-					'FINISHED_PROCESSING_SCHEDULE_TASK',
-					str(task_id),
-					'0'
-				)
+	if len(exists[0]) > 0 and file_last_modified.date() == exists[0][0]['last_modified_dttm'].date():
+		file_exists = True
+		start_at = get_last_row(filepath, filename)
 
-			log('File already exists. Nothing new to process.')
-			close()
-			return
-	else:
-		start_at_result = execute_sp('MWH_FILES.MANAGE_CSV_DATA', {
-			'message': 'GET_LAST_ROW',
-			'PATH': filepath,
-			'FILE_NAME': filename,
-			'COLUMN_NAME': '',
-			'COLUMN_POSITION': '',
-			'ROW_NUMBER': '',
-			'VALUE': '',
-			'FILE_LAST_MODIFIED_DTTM': ''
-		}, out_arg='return_flg')
-		start_at = start_at_result[0][0]['last_row']
+	execute_scheduled_tasks_sp(
+		'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+		'TASK_REQUEST_CHECK',
+		str(task_id),
+		'EXISTING FILE' if file_exists else 'NEW FILE'
+	)
 
 	total = 0
 	insert_count = 0
@@ -80,6 +70,17 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 	rows = read_workbook_data(file)
 
 	totals_rows = len(rows)
+	if file_exists and start_at == totals_rows:
+		if task_id:
+			execute_scheduled_tasks_sp(
+				'MWH.MANAGE_SCHEDULE_TASK_JOBS',
+				'FINISHED_PROCESSING_SCHEDULE_TASK',
+				str(task_id),
+				'0'
+			)
+
+		log('File already exists. Nothing new to process.')
+		return
 
 	if task_id:
 		execute_scheduled_tasks_sp(
@@ -93,14 +94,14 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 		curr_row = row_num + 1
 		to_row = row_num + row_limit_display
 
-		if curr_row < start_at:
-			continue
-
 		if to_row >= totals_rows:
 			to_row = totals_rows
 
 		if row_num % row_limit_display == 0:
 			log(f"{get_now_datetime()}: processing rows {format_number(curr_row)} to {format_number(to_row)} of {format_number(totals_rows)}")
+
+		if curr_row < start_at:
+			continue
 
 		for col_pos, col in enumerate(columns):
 			value = row[col_pos]
@@ -116,10 +117,10 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 					'COLUMN_POSITION': str(col_pos + 1),
 					'ROW_NUMBER': str(row_num + 1),
 					'VALUE': value,
-					'FILE_LAST_MODIFIED_DTTM': file_last_modified
-				}, out_arg='return_flg')
+					'FILE_LAST_MODIFIED_DTTM': file_last_modified_str
+				}, out_arg=out_arg)
 
-				processed = result[len(result) - 1][0]['return_flg']
+				processed = result[len(result) - 1][0][out_arg]
 
 			total += 1
 
@@ -139,9 +140,6 @@ def process_spreadsheet_data(file, resume='', row_limit_display=100, task_id='')
 			str(task_id),
 			str(total)
 		)
-
-	# Close DB connection
-	close()
 
 	log("")
 	log(f"TOTAL: {format_number(total)}")

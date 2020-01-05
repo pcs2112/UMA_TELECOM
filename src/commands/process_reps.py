@@ -1,32 +1,17 @@
-from src.mssql_db import init_db, close
-from src.config import get_config
 from src.rep_helper import (
     fetch_api_rep_data, start_process, stop_process, save_rep, save_rep_role, save_rep_skill, save_rep_workgroup
 )
-from src.utils import format_number
+from src.utils import format_number, log
 
 
 def process_reps():
-    config = get_config()
-    
-    db_config = {
-        'DB_SERVER': config['DB_SERVER'],
-        'DB_NAME': config['DB_NAME'],
-        'DB_USER': config['DB_USER'],
-        'DB_PASSWORD': config['DB_PASSWORD'],
-        'DB_DRIVER': config['DB_DRIVER'],
-        'DB_TRUSTED_CONNECTION': config['DB_TRUSTED_CONNECTION']
-    }
-    
-    init_db(db_config)
-    
     total_processed = 0
     
-    print("Processing ...")
+    log("Processing ...")
     
     master_load_id = start_process()
     if not master_load_id:
-        print("Processing halted. Master load id not returned.")
+        log("Processing halted. Master load id not returned.")
         exit()
     
     data = fetch_api_rep_data()
@@ -51,9 +36,7 @@ def process_reps():
     
     summary = stop_process(master_load_id)
     
-    print(f"TOTAL ROWS PROCESSED: {format_number(summary['return_value'])}")
-    print(f"TOTAL NEW REPS: {format_number(summary['new_rep_count'])}")
-    print(f"TOTAL ROWS REMOVED: {format_number(summary['removed_count'])}")
-    print(f"MASTER LOAD HISTORY ID: {master_load_id}")
-    
-    close()
+    log(f"TOTAL ROWS PROCESSED: {format_number(summary['return_value'])}")
+    log(f"TOTAL NEW REPS: {format_number(summary['new_rep_count'])}")
+    log(f"TOTAL ROWS REMOVED: {format_number(summary['removed_count'])}")
+    log(f"MASTER LOAD HISTORY ID: {master_load_id}")

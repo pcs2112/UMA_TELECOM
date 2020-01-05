@@ -1,27 +1,13 @@
 import os
 import yaml
-from src.config import get_config
-from src.mssql_db import init_db, close, execute_sp
+from src.mssql_db import execute_sp
 from src.scheduled_tasks_helper import execute_scheduled_tasks_sp
-from src.utils import format_number
+from src.utils import format_number, log
 
 
 def process_yaml_data(file, task_id = ''):
 	if os.path.exists(file) is False:
 		raise FileExistsError(f"{file} is an invalid file.")
-
-	# Init DB connection
-	config = get_config()
-	db_config = {
-		'DB_SERVER': config['DB_SERVER'],
-		'DB_NAME': config['DB_NAME'],
-		'DB_USER': config['DB_USER'],
-		'DB_PASSWORD': config['DB_PASSWORD'],
-		'DB_DRIVER': config['DB_DRIVER'],
-		'DB_TRUSTED_CONNECTION': config['DB_TRUSTED_CONNECTION']
-	}
-
-	init_db(db_config)
 
 	# Get the file contents
 	with open(file) as fp:
@@ -37,7 +23,7 @@ def process_yaml_data(file, task_id = ''):
 	calculate_update_count = 0
 	error_count = 0
 	
-	print(f"Processing ...")
+	log(f"Processing ...")
 
 	yaml_keys = yaml_data.keys()
 
@@ -105,13 +91,10 @@ def process_yaml_data(file, task_id = ''):
 			str(total)
 		)
 
-	# Close DB connection
-	close()
-
-	print("")
-	print(f"TOTAL: {format_number(total)}")
-	print(f"SOURCE INSERT COUNT: {format_number(source_insert_count)}")
-	print(f"SOURCE UPDATE COUNT: {format_number(source_update_count)}")
-	print(f"CALCULATE INSERT COUNT: {format_number(calculate_insert_count)}")
-	print(f"CALCULATE UPDATE COUNT: {format_number(calculate_update_count)}")
-	print(f"ERROR COUNT: {format_number(error_count)}")
+	log("")
+	log(f"TOTAL: {format_number(total)}")
+	log(f"SOURCE INSERT COUNT: {format_number(source_insert_count)}")
+	log(f"SOURCE UPDATE COUNT: {format_number(source_update_count)}")
+	log(f"CALCULATE INSERT COUNT: {format_number(calculate_insert_count)}")
+	log(f"CALCULATE UPDATE COUNT: {format_number(calculate_update_count)}")
+	log(f"ERROR COUNT: {format_number(error_count)}")

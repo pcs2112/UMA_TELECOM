@@ -4,9 +4,9 @@ import zipfile
 import shutil
 import datetime
 from src.config import get_config
-from src.mssql_db import init_db, close, execute_sp
+from src.mssql_db import execute_sp
 from src.scheduled_tasks_helper import execute_scheduled_tasks_sp, get_next
-from src.utils import create_logger, log
+from src.utils import log
 from .process_spreadsheet_data import process_spreadsheet_data
 from .process_yaml_data import process_yaml_data
 
@@ -43,20 +43,8 @@ def get_current_task_id():
 def run_scheduled_task():
     current_task_id = get_current_task_id()
     if current_task_id:
-        log(f'Busy. Currently running task ID: {current_task_id}.')
+        log(f'Busy. Running task #{current_task_id}.')
         return
-
-    db_config = {
-        'DB_DRIVER': config['DB_DRIVER'],
-        'DB_SERVER': config['DB_SERVER'],
-        'DB_NAME': config['DB_NAME'],
-        'DB_USER': config['DB_USER'],
-        'DB_PASSWORD': config['DB_PASSWORD'],
-        'DB_TRUSTED_CONNECTION': config['DB_TRUSTED_CONNECTION']
-    }
-
-    # Open DB connection
-    init_db(db_config)
 
     log('Getting the next task to be executed...')
     next_task = get_next()
@@ -114,16 +102,15 @@ def run_scheduled_task():
     res = requests.get(download_url)
     with open(download_filename, 'wb') as f:
         f.write(res.content)
-    log(f'Finished downloading file.')
+    log(f'Finished downloading file {download_filename}...')
 
     if '.zip' in download_basename:
-        log(f'Extracting files...')
+        log(f'Extracting files in {tmp_dir}...')
         with zipfile.ZipFile(download_filename, 'r') as zip_ref:
             zip_ref.extractall(tmp_dir)
 
         log(f'Finished Extracting files.')
 
-    # Detect the type of file we're dealing with
     if '.zip' in download_basename:
         downloaded_filename = os.path.join(tmp_dir, download_basename.replace('.zip', ''), scheduled_basename)
     else:
@@ -149,9 +136,6 @@ def run_scheduled_task():
         log('Exiting because the file was not found.')
         error_exit()
         return
-    
-    # Close DB
-    close()
 
     if '.csv' in scheduled_basename:
         process_spreadsheet_data(downloaded_filename, task_id=task_id)
@@ -165,10 +149,5 @@ def run_scheduled_task():
     remove_lock_file()
 
 
-def exit():
-    close()
-
-
 def error_exit():
     remove_lock_file()
-    close()

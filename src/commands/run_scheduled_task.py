@@ -3,6 +3,7 @@ import requests
 import zipfile
 import shutil
 import datetime
+import time
 from src.config import get_config
 from src.mssql_db import execute_sp
 from src.scheduled_tasks_helper import execute_scheduled_tasks_sp, get_next
@@ -108,11 +109,15 @@ def run_scheduled_task():
         log(f'Extracting files in {tmp_dir}...')
         with zipfile.ZipFile(download_filename, 'r') as zip_ref:
             zip_ref.extractall(tmp_dir)
+            for f in zip_ref.infolist():
+                date_time = time.mktime(f.date_time + (0, 0, -1))
+                os.utime(os.path.join(tmp_dir, f.filename), (date_time, date_time))
 
         log(f'Finished Extracting files.')
 
     if '.zip' in download_basename:
         downloaded_filename = os.path.join(tmp_dir, download_basename.replace('.zip', ''), scheduled_basename)
+        
     else:
         downloaded_filename = os.path.join(tmp_dir, download_basename)
         new_downloaded_filename = os.path.join(tmp_dir, scheduled_basename)

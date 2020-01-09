@@ -19,7 +19,8 @@ def get_last_row(filepath, filename):
 		'COLUMN_POSITION': '',
 		'ROW_NUMBER': '',
 		'VALUE': '',
-		'FILE_LAST_MODIFIED_DTTM': ''
+		'FILE_LAST_MODIFIED_DTTM': '',
+		'FILE_SIZE_IN_BYTES': ''
 	}, out_arg=out_arg)
 	return start_at_result[0][0]['last_row']
 
@@ -30,6 +31,7 @@ def process_spreadsheet_data(file, row_limit_display=100, task_id=''):
 
 	filename = ntpath.basename(file)
 	filepath = ntpath.dirname(file)
+	file_size = os.path.getsize(file)
 	file_last_modified = datetime.datetime.fromtimestamp(os.path.getmtime(file))
 	file_last_modified_str = file_last_modified.strftime('%Y-%m-%d %H:%M:%S')
 	file_exists = False
@@ -43,10 +45,11 @@ def process_spreadsheet_data(file, row_limit_display=100, task_id=''):
 		'COLUMN_POSITION': '',
 		'ROW_NUMBER': '',
 		'VALUE': '',
-		'FILE_LAST_MODIFIED_DTTM': file_last_modified_str
+		'FILE_LAST_MODIFIED_DTTM': file_last_modified_str,
+		'FILE_SIZE_IN_BYTES': file_size
 	}, out_arg=out_arg)
 
-	if len(exists[0]) > 0 and file_last_modified.date() == exists[0][0]['last_modified_dttm'].date():
+	if len(exists[0]) > 0 and file_last_modified.date() == exists[0][0]['last_modified_dttm'].date() and file_size == exists[0][0]['file_size']:
 		file_exists = True
 		start_at = get_last_row(filepath, filename)
 
@@ -117,7 +120,8 @@ def process_spreadsheet_data(file, row_limit_display=100, task_id=''):
 					'COLUMN_POSITION': str(col_pos + 1),
 					'ROW_NUMBER': str(row_num + 1),
 					'VALUE': value,
-					'FILE_LAST_MODIFIED_DTTM': file_last_modified_str
+					'FILE_LAST_MODIFIED_DTTM': file_last_modified_str,
+					'FILE_SIZE_IN_BYTES': file_size
 				}, out_arg=out_arg)
 
 				processed = result[len(result) - 1][0][out_arg]

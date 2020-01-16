@@ -13,6 +13,9 @@ def opsgenie_alert():
       return
 
     error = results[0][0]
+    if not error or 'error_message' not in error or error['error_message'] == '':
+      log('No Alert found.')
+      return
 
     init_opsgenie({
       'OPSGENIE_API_KEY': config['OPSGENIE_API_KEY'],

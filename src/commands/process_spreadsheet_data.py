@@ -45,8 +45,8 @@ def process_spreadsheet_data(file, row_limit_display=100, task_id=''):
 		'COLUMN_POSITION': '',
 		'ROW_NUMBER': '',
 		'VALUE': '',
-		'FILE_LAST_MODIFIED_DTTM': file_last_modified_str,
-		'FILE_SIZE_IN_BYTES': file_size
+		'FILE_LAST_MODIFIED_DTTM': '',
+		'FILE_SIZE_IN_BYTES': ''
 	}, out_arg=out_arg)
 
 	if len(exists[0]) > 0 and file_last_modified.date() == exists[0][0]['last_modified_dttm'].date() and file_size == exists[0][0]['file_size']:
